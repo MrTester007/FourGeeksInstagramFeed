@@ -16,9 +16,10 @@ header h1 {
 
 div.post {
     background: white;
+    margin-bottom: 50px; /* Añadido para asegurar espacio entre los posts */
 }
 
-div.post img {
+div.post img:not(.avatar) {
     width: 100%;
 }
 
@@ -32,10 +33,24 @@ div.post p {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    flex: 1;
+    margin: 0;
 }
 
 .date {
     color: gray;
+    margin-left: auto;
 }
 
 div.container {
@@ -45,29 +60,4 @@ div.container {
 
 .container:not(:first-of-type) {
     margin-top: 50px;
-}
-
-.home {
-    text-align: center;
-    padding-top: 50px;
-}
-
-.options {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.btn:hover {
-    background-color: #0056b3;
 }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Instagram Feed</title>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <script src="https://cdn.jsdelivr.net/npm/faker/dist/faker.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="https://w7.pngwing.com/pngs/138/63/png-transparent-computer-icons-arrow-back-icon-angle-logo-symbol-thumbnail.png" alt="Back Arrow" class="back-arrow" style="width: 25px; height: 25px; margin-right: 8px;">
+        </a>
+        <div class="container">
+            <h1>Breathe Code Photo Feed</h1>
+        </div>
+    </header>
+    
+    <div class="container" id="feed">
+        <div class="post" id="template-post">
+            <div class="post-header">
+                <img src="" class="avatar" alt="avatar">
+                <p class="username"></p>
+                <p class="date"></p>
+            </div>
+        
+            <div>
+                <img src="" alt="post image">
+            </div>
+
+            <div>
+                <p class="description"></p>
+            </div>
+        </div>
+        <div id="sentinel"></div> <!-- Sentinel para detectar cuando estamos cerca del final -->
+    </div>
+</body>
+</html>
